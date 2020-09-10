@@ -23,4 +23,4 @@ def mess(message):
 	col = ( f'Температура: {temp} , {w.status} '  )
 	bot.send_message(message.chat.id,col)
 
-bot.polling()
+bot.polling(none_stop=True)
