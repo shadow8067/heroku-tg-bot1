@@ -6,7 +6,7 @@ bot = telebot.TeleBot('1302297837:AAFSsirtt6un4qXigNAqCd57bfb3h8MWlaQ')
 @bot.message_handler(commands=['start'])
 def start(message):
 
-	send_mess = (f"Привет {message.from_user.first_name}. Я бот богоды.\nВведите название города или деревни")
+	send_mess = (f"Привет {message.from_user.first_name}.\nЯ бот богоды.\nВведите название города или деревни")
 	bot.send_message(message.chat.id, send_mess)
 
 
